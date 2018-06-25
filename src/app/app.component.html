@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<h2>Fake enviroment: </h2>
+<button (click)="fakeEnvironment('dev')">Development</button>
+<button (click)="fakeEnvironment('stg')">Stage</button>
+<button (click)="fakeEnvironment('prd')">Prod</button>
+<h2>Fake platform: </h2>
+<button (click)="fakePlatform('web')">Web</button>
+<button (click)="fakePlatform('mobile')">Mobile</button>
+<div style="background-color: lightgray">
+<h1>I'm on hostlink: <span style="color: red">{{hostname}}</span></h1>
+<h1>I'm behaving as: <span style="color: red">{{environment}}</span></h1>
+<h1>I'm mobile app: <span style="color: red">{{isMobile}}</span></h1>
+<h1>My current settings:</h1>
+<pre>
+  {{mainSettings}}
+</pre>
+</div>
